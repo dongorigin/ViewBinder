@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation project(':viewbinder_annotation')
+
+    // 生成 Java 代码
+    implementation 'com.squareup:javapoet:1.11.1'
+
+    // 自动生成 META-INF 配置信息
+    compileOnly 'com.google.auto.service:auto-service:1.0-rc4'
+    // Kotlin 的 Processor 必须声明下面这行 auto-service 才能生效，Java 的 Processor 不声明也生效
+    kapt 'com.google.auto.service:auto-service:1.0-rc4'
+}
