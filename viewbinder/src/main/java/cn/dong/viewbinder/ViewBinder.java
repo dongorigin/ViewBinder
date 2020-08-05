@@ -1,9 +1,9 @@
 package cn.dong.viewbinder;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import cn.dong.viewbinder.provider.ActivityProvider;
 import cn.dong.viewbinder.provider.Provider;
 import cn.dong.viewbinder.provider.ViewProvider;

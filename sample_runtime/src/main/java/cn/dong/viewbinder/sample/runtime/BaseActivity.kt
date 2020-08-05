@@ -1,7 +1,7 @@
 package cn.dong.viewbinder.sample.runtime
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * @author dong on 2018/07/28.
